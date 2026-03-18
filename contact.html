@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="index.html" class="header-link">
+      <img
+        class="header-image"
+        src="img/image002.jpg"
+        alt="Reiterhof Hausdorf Header"
+      />
+    </a>
+
+    <div class="container">
+      <nav class="navigation">
+        <button class="menu-toggle" id="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a class="menu-link" href="index.html">Home</a>
+          <a class="menu-link" href="aboutus.html">Über Uns</a>
+          <a class="menu-link" href="contact.html">Kontakt</a>
+        </div>
+      </nav>
+    </div>
+
+    <img src="img/logo.png" class="logo" alt="Logo Reiterhof Hausdorf" />
+
+    <h1 class="headline">Kontakt</h1>
+    <div class="discription-section">
+      <div class="half-width">
+        <h2>Adresse</h2>
+        <p>
+          Reiterhof Hausdorf GmbH<br />
+          Flottbek 2<br />
+          24623 Großenaspe
+        </p>
+
+        <h2>Telefon</h2>
+        <a href="tel:+4943278979111">+49 43278979111</a>
+
+        <h2>E-Mail</h2>
+        <p>
+          <a href="mailto:nicole.hausdorf@reiterhof-hausdorf.de"
+            >Email an Reiterhof Hausdorf</a
+          >
+        </p>
+      </div>
+      <h3>Weitere Links</h3>
+      <a
+        href="https://www.kleinanzeigen.de/pro/nicole-hausdorf---gemischte-landwirtschaft"
+        target="_blank"
+        >eBay Kleinanzeigen</a
+      >
+      <a href="https://www.stall-frei.de/162410" target="_blank"
+        >Stellplatz mieten</a
+      >
+
+      <div style="clear: both"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Reiterhof Hausdorf GmbH. Alle Rechte vorbehalten.</p>
+
+      <div class="footer-links">
+        <a href="imprint.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const nav = document.getElementById("nav-links");
+
+      btn.addEventListener("click", () => {
+        nav.classList.toggle("show-menu");
+      });
+    </script>
+  </body>
+</html>

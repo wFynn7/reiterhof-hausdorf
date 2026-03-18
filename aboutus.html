@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Über Uns - Reiterhof Hausdorf</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="index.html" class="header-link hide-on-mobile">
+      <img
+        class="header-image"
+        src="img/image002.jpg"
+        alt="Reiterhof Hausdorf Header - Zur Startseite"
+      />
+    </a>
+
+    <div class="container">
+      <nav class="navigation">
+        <button class="menu-toggle" id="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a class="menu-link" href="index.html">Home</a>
+          <a class="menu-link" href="aboutus.html">Über Uns</a>
+          <a class="menu-link" href="contact.html">Kontakt</a>
+        </div>
+      </nav>
+    </div>
+
+    <img src="img/logo.png" class="logo" alt="Logo Reiterhof Hausdorf" />
+
+    <h1 class="headline">Über Uns</h1>
+    <div class="content">
+      <section class="section-with-images">
+        <div class="text-side">
+          <h2>Über uns</h2>
+          <p>
+            Wir sind ein kleiner Reiterhof im Holsteiner Auenland. Die
+            Reitstunden werden von unserer FN-Trainerin (C) Nicole Hausdorf
+            geleitet.
+          </p>
+          <p>
+            Bei uns sitzen Ihre Kinder bei jeder Unterrichtseinheit etwa eine
+            Stunde auf dem Pferd. Das Holen der Pferde von der Koppel ist ebenso
+            Übungsziel wie das Pflegen, Putzen, Trockenführen und das
+            Zurückbringen zur Koppel.
+          </p>
+          <p>
+            In der Abteilung lernt Ihr Kind die Grundgangarten sowie
+            Dressur-Elemente und das Springen über Hindernisse.
+          </p>
+        </div>
+        <div class="image-side">
+          <img src="img/image009.jpg" alt="Hofansicht" />
+          <img src="img/image013.jpg" alt="Pferdepflege" />
+        </div>
+      </section>
+
+      <hr style="margin-bottom: 40px; border: 0; border-top: 1px solid #eee" />
+
+      <section class="section-with-images">
+        <div class="text-side">
+          <h2>Angebote</h2>
+
+          <h3>Reitunterricht</h3>
+          <ul>
+            <li>Führzügel – Kinder & Jugendliche</li>
+            <li>Fortgeschrittene Kinder & Jugendliche</li>
+          </ul>
+
+          <h3>Reitabzeichen</h3>
+          <p>
+            Als Leistungsnachweis und zur Vertiefung von Kenntnissen bieten wir
+            regelmäßig FN-Reitabzeichenkurse an.
+          </p>
+
+          <h3>Pflegepferde</h3>
+          <ul>
+            <li>Reiten und Pflege außerhalb des Unterrichts</li>
+            <li>Ausritte auf den Pflegepferden</li>
+            <li>Ausleihung des Equipments</li>
+          </ul>
+        </div>
+
+        <div class="image-side">
+          <img src="img/image006.jpg" alt="Reitunterricht" />
+          <img src="img/image012.jpg" alt="Pferde auf der Weide" />
+        </div>
+      </section>
+
+      <section>
+        <h2>Weitere Informationen</h2>
+        <p>
+          Weitere Infos finden Sie unter: <br />
+          <a href="https://www.hausdorf-landwirtschaft.de" target="_blank"
+            >www.hausdorf-landwirtschaft.de</a
+          >
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 Reiterhof Hausdorf GmbH. Alle Rechte vorbehalten.</p>
+      <div class="footer-links">
+        <a href="imprint.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const nav = document.getElementById("nav-links");
+
+      btn.addEventListener("click", () => {
+        nav.classList.toggle("show-menu");
+      });
+    </script>
+  </body>
+</html>

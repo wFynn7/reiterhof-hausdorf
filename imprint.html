@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="index.html" class="header-link hide-on-mobile">
+      <img
+        class="header-image"
+        src="img/image002.jpg"
+        alt="Reiterhof Hausdorf Header - Zur Startseite"
+      />
+    </a>
+
+    <div class="container">
+      <nav class="navigation">
+        <button class="menu-toggle" id="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a class="menu-link" href="index.html">Home</a>
+          <a class="menu-link" href="aboutus.html">Über Uns</a>
+          <a class="menu-link" href="contact.html">Kontakt</a>
+        </div>
+      </nav>
+    </div>
+
+    <img src="img/logo.png" class="logo" />
+    <h1 class="headline">Impressum</h1>
+    <div class="discription-section">
+      <section id="impressum">
+        <h2>Impressum</h2>
+        <p><strong>Reiterhof Hausdorf GmbH</strong></p>
+
+        <p>
+          <strong>Verantwortlich für den Inhalt dieser Webseite:</strong><br />
+          Geschäftsführerin: Nicole Hausdorf
+        </p>
+
+        <p>
+          <strong>Adresse:</strong><br />
+          Flottbek 2<br />
+          24623 Großenaspe
+        </p>
+
+        <p>
+          <strong>Kontakt:</strong><br />
+          E-Mail:
+          <a href="mailto:nicole.hausdorf@reiterhof-hausdorf.de"
+            >nicole.hausdorf@reiterhof-hausdorf.de</a
+          ><br />
+          Telefon: 04327 8979111<br />
+          Mobil: 0170 6876247
+        </p>
+
+        <p>
+          <strong>Handelsregister:</strong><br />
+          Amtsgericht Kiel, HRB 11105
+        </p>
+        <p>
+          <strong>Umsatzsteuer-ID:</strong><br />
+          DE326094418
+        </p>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2026 Reiterhof Hausdorf GmbH. Alle Rechte vorbehalten.</p>
+
+      <div class="footer-links">
+        <a href="imprint.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </footer>
+    <script>
+      const btn = document.getElementById("mobile-menu-btn");
+      const nav = document.getElementById("nav-links");
+
+      btn.addEventListener("click", () => {
+        nav.classList.toggle("show-menu");
+      });
+    </script>
+  </body>
+</html>
